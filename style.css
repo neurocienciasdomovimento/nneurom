@@ -1,53 +1,63 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilo para o cabeçalho */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-/* Estilo para a navegação */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+/* Logo */
+.logo-text {
+    font-size: 24px;
     font-weight: bold;
+    color: #000;
 }
 
-nav ul li a:hover {
+.highlight {
+    color: red;
     text-decoration: underline;
 }
 
-/* Estilo para as seções */
-section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-bottom: 1px solid #ddd;
+/* Barra de pesquisa */
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    max-width: 200px;
 }
 
-section h2 {
-    font-size: 22px;
-    color: #333;
-}
-
-section p {
+.search-bar input {
+    width: 100%;
+    padding: 5px 10px;
     font-size: 16px;
-    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    color: #007bff;
 }
