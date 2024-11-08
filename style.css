@@ -66,3 +66,60 @@ footer {
     font-size: 14px;
     color: #555;
 }
+
+.gallery-section {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.gallery-slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
