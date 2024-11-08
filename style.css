@@ -70,7 +70,7 @@ footer {
 .sobre-section {
     background-color: #000;
     color: #fff;
-    padding: 40px 20px;
+    padding: 10px 5px;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -79,18 +79,18 @@ footer {
 
 .sobre-texto {
     max-width: 600px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
 }
 
 .sobre-texto h2 {
-    font-size: 32px;
+    font-size: 20px;
     margin-bottom: 20px;
     color: #fff;
 }
 
 .sobre-texto p {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .gallery-section {
