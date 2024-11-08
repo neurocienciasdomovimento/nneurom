@@ -67,6 +67,32 @@ footer {
     color: #555;
 }
 
+.sobre-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-texto {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.sobre-texto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+}
+
 .gallery-section {
     background-color: black;
     padding: 20px;
