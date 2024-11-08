@@ -1,64 +1,68 @@
-/* Estilos básicos */
-body {
-    font-family: Montserrat, sans-serif;
+* {
     margin: 0;
-    padding: 2;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estilo para o cabeçalho */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
-/* Logo */
-.logo-text {
+.logo {
     font-size: 24px;
     font-weight: bold;
-    color: #000;
-    text-decoration: underline
 }
 
-.highlight {
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo .logo-n {
+    color: black;
+}
+
+.logo .logo-neurom {
     color: red;
-    text-decoration: underline;
 }
 
-/* Barra de pesquisa */
-.search-bar {
-    flex: 1;
-    margin: 0 20px;
-    max-width: 200px;
-}
-
-.search-bar input {
-    width: 100%;
-    padding: 5px 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Menu de navegação */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #000;
+    color: #333;
     font-size: 16px;
-    font-weight: normal;
 }
 
-nav ul li a:hover {
-    color: #007bff;
+nav a:hover {
+    color: red;
+}
+
+.main-logo {
+    margin-top: 30px;
+    max-width: 200px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #555;
 }
