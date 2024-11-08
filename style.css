@@ -73,12 +73,12 @@ footer {
     padding: 10px 5px;
     text-align: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 .sobre-texto {
-    max-width: 600px;
+    max-width: 200px;
     font-size: 14px;
     line-height: 1.6;
 }
