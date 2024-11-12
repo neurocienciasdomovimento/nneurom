@@ -25,9 +25,9 @@ header {
 }
 
 .logo a {
+    font-size: 32px;
+    font-weight: bold;
     text-decoration: none;
-    color: #333;
-    font-weight: normal;
 }
 
 .logo .logo-n {
@@ -35,9 +35,12 @@ header {
     font-weight: normal;
 }
 
-.logo .logo-neurom {
+.logo .red {
     color: red;
-    font-weight: normal;
+}
+
+.logo .logo-neuro {
+    color: black;
 }
 
 nav ul {
@@ -77,12 +80,10 @@ nav a:hover {
 
 .logo-title .black {
     color: black;
-    font-weight: normal;
 }
 
 .logo-title .red {
-    color: red
-    font-weight: normal;
+    color: red;
 }
 
 .subtitle {
