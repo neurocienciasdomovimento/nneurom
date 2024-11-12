@@ -25,15 +25,18 @@ header {
 
 .logo a {
     text-decoration: none;
-    color: #333;
+    color: #333
+    font-weight: normal;
 }
 
 .logo .logo-n {
-    color: black;
+    color: black
+    font-weight: normal;
 }
 
 .logo .logo-neurom {
-    color: red;
+    color: red
+    font-weight: normal;
 }
 
 nav ul {
@@ -45,7 +48,8 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 16px
+    font-weight: normal;
 }
 
 nav a:hover {
@@ -55,22 +59,26 @@ nav a:hover {
 .main-logo {
     margin-top: 30px;
     max-width: 500px;
-    width: 100%;
+    width: 100%
+    font-weight: normal;
 }
 
 .logo-title {
     font-size: 48px;
     text-align: center;
     margin-top: 20px;
-    letter-spacing: 8px;
+    letter-spacing: 8px
+    font-weight: normal;
 }
 
 .logo-title .black {
-    color: black;
+    color: black
+    font-weight: normal;
 }
 
 .logo-title .red {
-    color: red;
+    color: red
+    font-weight: normal;
 }
 
 .subtitle {
@@ -80,6 +88,7 @@ nav a:hover {
     margin-top: 10px;
     color: #333; /* Ou ajuste a cor conforme desejado */
     letter-spacing: 2px; /* Ajuste o espaçamento entre letras conforme desejado */
+    font-weight: normal
 }
 
 footer {
@@ -98,19 +107,22 @@ footer {
     text-align: center;
     display: flex;
     justify-content: left;
-    align-items: left;
+    align-items: left
+    font-weight: normal;
 }
 
 .sobre-texto {
     max-width: 200px;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.6
+    font-weight: normal;
 }
 
 .sobre-texto h3 {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff
+    font-weight: normal;
 }
 
 .sobre-texto p {
