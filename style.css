@@ -73,6 +73,15 @@ nav a:hover {
     color: red;
 }
 
+.subtitle {
+    font-size: 24px; /* Ajuste o tamanho conforme necessário */
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+    color: #333; /* Ou ajuste a cor conforme desejado */
+    letter-spacing: 2px; /* Ajuste o espaçamento entre letras conforme desejado */
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
@@ -98,7 +107,7 @@ footer {
     line-height: 1.6;
 }
 
-.sobre-texto h2 {
+.sobre-texto h3 {
     font-size: 20px;
     margin-bottom: 20px;
     color: #fff;
@@ -145,7 +154,6 @@ footer {
     padding: 16px;
     margin-top: -22px;
     color: white;
-    font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
     user-select: none;
