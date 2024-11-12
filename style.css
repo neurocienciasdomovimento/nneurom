@@ -60,9 +60,9 @@ nav a:hover {
 
 .logo-title {
     font-size: 48px;
-    font-weight: bold;
     text-align: center;
     margin-top: 20px;
+    letter-spacing: 8px;
 }
 
 .logo-title .black {
@@ -86,7 +86,7 @@ footer {
     background-color: #000;
     color: #fff;
     padding: 10px 5px;
-    text-align: left;
+    text-align: center;
     display: flex;
     justify-content: left;
     align-items: left;
