@@ -42,72 +42,14 @@
         </section>
      
             
-       <section class="sobre-section">
-        <div class="sobre-texto">
-        <h3>Sobre</h3>
-        <p>O Núcleo de Neurociências do Movimento (NNeuroM) é um núcleo de pesquisa do Grupo de Estudo em Desenvolvimento e Aprendizagem Motora (GEDAM) da Escola de Educação Física, Fisioterapia e Terapia Ocupacional da UFMG.</p>
-        
-        <p>O estudo do movimento voluntário é realizado em diferentes níveis de análises, que passa pelos mais macroscópicos (níveis sociológico e comportamental) até os mais microscópicos (eletrofisiológico e molecular). Para tal, o NNeuroM interage com outros laboratórios da UFMG e em outras instituições no Brasil e no exterior. Integrantes de diferentes áreas de formação participam do núcleo, tais como Educação Física, Fisioterapia, Terapia Ocupacional e Música.</p>
-    </div>
-</section>
-
-<section class="gallery-section">
-    <div class="gallery-container">
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <div class="gallery-slides">
-            <img src="foto1.jpg" class="slide" alt="Foto 1">
-           
-        </div>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
-</section>
-
-<section class="linhasdepesquisa-section">
-    <div class="linhasdepesquisa-texto">
-        <h2>Linhas de Pesquisa</h2>
-        <p>Associação entre fatores que otimizam a aprendizagem motora e aspectos neurobiológicos</p>
-        <p>Modulação da resposta central no controle motor</p>
-        <p>Papel de áreas cerebrais no controle e aprendizagem motora</p>
-        <p>Funções executivas, transtornos psiquiátricos e comportamento motor</p>
-        
-    </div>
-</section>
-            
-    </main>
+      </main>
 
     <footer>
         <p>&copy; 2024 NNEUROM - Universidade Federal de Minas Gerais</p>
+        <p>  </p>
         <p>Desenvolvido por Isabelle Nery</p>
     </footer>
 
     
-   <script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-
-function showSlide(n) {
-    slides.forEach((slide, index) => {
-        slide.classList.remove('active');
-        if (index === n) {
-            slide.classList.add('active');
-        }
-    });
-}
-
-function changeSlide(n) {
-    currentSlide += n;
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    }
-    if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
-    showSlide(currentSlide);
-}
-
-// Mostrar o primeiro slide ao carregar a página
-showSlide(currentSlide);
-</script>
-
 </body>
 </html>
