@@ -19,6 +19,22 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+.logo-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-title .black {
+    color: black;
+}
+
+.logo-title .red {
+    color: red;
+}
+
+
 .logo {
     font-size: 20px;
 }
