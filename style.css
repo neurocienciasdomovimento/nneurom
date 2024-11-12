@@ -109,6 +109,16 @@ nav a:hover {
     margin: 0;
 }
 
+}
+
+.faixa-texto {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
 footer {
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
