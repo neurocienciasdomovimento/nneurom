@@ -106,7 +106,7 @@ nav a:hover {
     font-size: 36px;
     font-weight: bold;
     color: white;
-    margin: 0;
+    margin-bottom: 10px;
 }
 
 }
@@ -116,7 +116,7 @@ nav a:hover {
     font-weight: normal;
     color: white;
     text-align: center;
-    margin: 0;
+    margin-top: 10px;
 }
 
 footer {
