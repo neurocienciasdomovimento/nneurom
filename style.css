@@ -19,22 +19,6 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
-.logo-title {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.logo-title .black {
-    color: black;
-}
-
-.logo-title .red {
-    color: red;
-}
-
-
 .logo {
     font-size: 20px;
 }
@@ -72,6 +56,21 @@ nav a:hover {
     margin-top: 30px;
     max-width: 500px;
     width: 100%;
+}
+
+.logo-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-title .black {
+    color: black;
+}
+
+.logo-title .red {
+    color: red;
 }
 
 footer {
