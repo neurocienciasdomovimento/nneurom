@@ -145,7 +145,7 @@ nav a:hover {
     gap: 20px;
 }
 
-.faixa-texto {
+.faixa-titulo {
     flex: 1;
     text-align: left;
 }
