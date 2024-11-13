@@ -147,7 +147,8 @@ nav a:hover {
 
 .faixa-titulo {
     flex: 1;
-    text-align: left;
+    text-align: center;
+    font-size: 24px;
 }
 
 .faixa-galeria {
