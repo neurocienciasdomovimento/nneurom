@@ -1,3 +1,4 @@
+/* Estilos básicos */
 * {
     margin: 0;
     padding: 0;
@@ -6,29 +7,101 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff;
-    color: #333;
-    text-align: center;
-    font-weight: normal;
-}
-
-header {
     display: flex;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-    font-weight: normal;
+    justify-content: center;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
-footer {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f7f7f7;
-    border-top: 1px solid #ddd;
-    font-size: 12px;
+/* Cabeçalho */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo .red {
+    color: #C8102F;
+    text-decoration: underline;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: url('background.png');
+    background-size: cover;
+}
+
+.logo-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+}
+
+.logo-title .red {
+    color: #C8102F;
+}
+
+.subtitle {
+    font-size: 20px;
     color: #555;
-    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.main-logo {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.ufmg {
+    font-size: 16px;
+    color: #C8102F;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
 }
