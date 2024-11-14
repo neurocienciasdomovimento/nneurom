@@ -22,20 +22,6 @@ header {
     font-weight: normal;
 }
 
-.logo {
-    font-size: 24px;
-}
-
-.logo a {
-    font-size: 20px;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.logo .red {
-    color: #C8102F;
-
-
 footer {
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
