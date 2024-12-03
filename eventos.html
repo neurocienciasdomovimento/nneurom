@@ -228,13 +228,15 @@
         align-items: center;
         text-align: center;
         padding: 15px;
-        height: 550px; 
-        width: 450px; 
+        height: auto; 
+        width: 100%;
+        max-width: 450px;
     }
         
     .member-card img {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        max-widht: 400px;
+        height: auto;
         border-radius: 0%;
         object-fit: cover;
         margin-bottom: 10px;
@@ -255,51 +257,50 @@
     }
         
     .social-icons {
-        display: center;
-        gap: 30px;
+        display: flex;
+        gap: 15px;
         margin-top: 10px;
         align-items: center;
-        text-decoration: none; 
-        color: inherit;
     }
     
     .social-icons img {
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
     }
 
 
 /* Responsividade para telas menores */
-        @media (max-width: 768px) {
-            .members-section {
-                grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
-                gap: 15px; /* Reduz o espaço entre os cards */
-                padding: 10px; /* Ajusta o padding */
-            }
-        
-            .member-card img {
-                width: 150px; /* Reduz o tamanho das imagens */
-                height: 150px; /* Mantém proporção circular */
-            }
-        
-            .member-info h3 {
-                font-size: 18px; /* Reduz o tamanho do nome */
-            }
-        
-            .member-info p {
-                font-size: 12px; /* Reduz o tamanho dos textos */
-            }
-        
-            .social-icons img {
-                width: 30px; /* Reduz os ícones sociais */
-                height: 30px;
-            }
-            
-            .section-1 h1 {
-                font-size: 40px;
-            }
-        }
-     
+@media (max-width: 768px) {
+    .members-section {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+        gap: 15px; /* Reduz o espaçamento */
+        padding: 15px; /* Ajusta o padding */
+    }
+
+    .member-card {
+        width: 100%; /* O card ocupa toda a largura disponível */
+        max-width: none; /* Remove limites de largura */
+    }
+
+    .member-card img {
+        width: 100%; /* Imagem ocupa toda a largura do card */
+        height: auto; /* Mantém proporção */
+    }
+
+    .member-info h3 {
+        font-size: 20px; /* Reduz o tamanho do título */
+    }
+
+    .member-info p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    .social-icons img {
+        width: 25px; /* Reduz o tamanho dos ícones sociais */
+        height: 25px;
+    }
+}
+    
     footer {
         background-color: #f9f9f9;
         text-align: center;
