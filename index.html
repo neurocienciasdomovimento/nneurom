@@ -544,7 +544,7 @@
         font-size: 36px;
         font-weight: normal;
         letter-spacing: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     
     .section-4 p {
@@ -554,7 +554,7 @@
     
     .numbers-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
         gap: 40px;
         justify-content: center;
     }
@@ -564,7 +564,7 @@
     }
     
     .number {
-        font-size: 48px;
+        font-size: 36px;
         font-weight: bold;
         margin: 0;
     }
@@ -581,9 +581,16 @@
     }
     
     .number-item p {
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
         color: #000;
+    }
+
+/* Responsividade para telas menores */
+        @media (max-width: 768px) {
+        .numbers-container {
+            grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas em telas pequenas */
+        }
     }
 
     footer {
