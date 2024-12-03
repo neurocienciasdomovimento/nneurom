@@ -389,9 +389,16 @@
     }
     
     .icons a {
-        display: none;
+        flex-direction: row; /* Ícone e texto lado a lado */
+        align-items: center; /* Centraliza o texto e o ícone */
+        gap: 10px; /* Espaço entre ícone e texto */
     }
-
+    
+    .icons a p {
+        display: none;
+        font-size: 12px; /* Texto menor em dispositivos móveis */
+    }
+    
     .map-container iframe {
         max-width: 100%; /* O mapa ocupa toda a largura disponível */
         height: 150px; /* Reduz a altura do mapa */
