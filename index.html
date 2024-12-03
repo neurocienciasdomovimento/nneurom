@@ -135,6 +135,11 @@
             </div>
         </section>
         
+            <section class="section-5">
+                <img src="galeria16.png" alt="NNEUROM">
+            </section>    
+        
+        
     </main>
 
     <footer>
@@ -565,7 +570,7 @@
     
     .number {
         font-size: 36px;
-        font-weight: bold;
+        font-weight: normal;
         margin: 0;
     }
     
@@ -593,6 +598,32 @@
         }
     }
 
+    .section-5 {
+        background-color: #000;
+        color: #fff;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-5 img {
+        max-width: 95%;
+        height: auto;
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .section-5 {
+                padding: 20px 5px; /* Reduz ainda mais o padding em dispositivos móveis */
+            }
+        
+            .section-5 img {
+                max-width: 100%; /* Ajusta a largura máxima da imagem */
+            }
+        }
+        
     footer {
         background-color: #f9f9f9;
         text-align: center;
