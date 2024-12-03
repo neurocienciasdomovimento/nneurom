@@ -356,6 +356,10 @@
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
+    .section-1 h1 {
+        font-size: 40px;
+    }
+    
     .section-2 {
         flex-direction: column; /* Empilha os elementos verticalmente */
         align-items: center; /* Centraliza os itens */
@@ -373,26 +377,28 @@
         display: flex; /* Habilita o flexbox */
         flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha, se necessário */
         justify-content: center; /* Centraliza os ícones horizontalmente */
+        align-items: center; /* Centraliza os itens verticalmente */
         gap: 20px; /* Espaçamento entre os itens */
     }
 
     .icons img {
-        width: 50px; /* Reduz o tamanho dos ícones */
-        height: 50px;
+        width: 60px; /* Reduz o tamanho dos ícones */
+        height: 60px;
+        margin-bottom: 10px;
     }
     
     .icons a {
         display: flex; /* Alinha os ícones e legendas dentro de cada link */
-        flex-direction: row; /* Ícone e legenda lado a lado */
+        flex-direction: column; /* Ícone e legenda lado a lado */
         align-items: center; /* Centraliza verticalmente o ícone e o texto */
         text-decoration: none; /* Remove o sublinhado dos links */
         color: inherit; /* Mantém a cor padrão do texto */
-        gap: 10px; /* Espaçamento entre o ícone e o texto */
 
     .icons a p {
         font-size: 14px; /* Ajusta o tamanho do texto */
         margin: 0;
         text-decoration: underline; /* Mantém o sublinhado */
+        color: #000;
     }
 
     .map-container iframe {
@@ -425,11 +431,7 @@
     form button {
         font-size: 14px; /* Botão com texto menor */
         padding: 8px; /* Padding ajustado */
-    }
-    
-    .section-1 h1 {
-        font-size: 40px;
-    }
+    } 
 }
         
 footer {
