@@ -370,19 +370,29 @@
     }
 
     .icons {
-        display: flex;
-        flex-direction: column; /* Organiza os ícones em uma única coluna */
-        justify-content: center;
-        gap: 15px;
+        display: flex; /* Habilita o flexbox */
+        flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha, se necessário */
+        justify-content: center; /* Centraliza os ícones horizontalmente */
+        gap: 20px; /* Espaçamento entre os itens */
     }
 
     .icons img {
-        width: 60px; /* Reduz o tamanho dos ícones */
-        height: 60px;
+        width: 50px; /* Reduz o tamanho dos ícones */
+        height: 50px;
     }
+    
+    .icons a {
+        display: flex; /* Alinha os ícones e legendas dentro de cada link */
+        flex-direction: row; /* Ícone e legenda lado a lado */
+        align-items: center; /* Centraliza verticalmente o ícone e o texto */
+        text-decoration: none; /* Remove o sublinhado dos links */
+        color: inherit; /* Mantém a cor padrão do texto */
+        gap: 10px; /* Espaçamento entre o ícone e o texto */
 
     .icons a p {
-        font-size: 12px; /* Reduz o tamanho do texto */
+        font-size: 14px; /* Ajusta o tamanho do texto */
+        margin: 0;
+        text-decoration: underline; /* Mantém o sublinhado */
     }
 
     .map-container iframe {
