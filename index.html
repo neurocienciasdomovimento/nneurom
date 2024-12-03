@@ -428,7 +428,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 50px;
     }
 
     .research-item {
@@ -480,6 +480,17 @@
         .section-3 h2 {
             font-size: 30px;
         }
+        
+        .research-item p {
+        font-size: 14px;
+        }
+        
+        .research-item::before,
+        .research-item::after {
+        content: none; /* Remove o conteúdo dos pseudo-elementos */
+        width: 0;
+        height: 0;
+    }    
     }
 
     footer {
@@ -495,7 +506,6 @@
         margin: 0;
     }
 
-</style>        
-
+</style>    
 </body>    
 </html>
