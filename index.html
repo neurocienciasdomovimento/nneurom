@@ -228,85 +228,110 @@
             height: auto;
         }
 
+.section-2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em linhas */
+    justify-content: center; /* Centraliza os itens em telas menores */
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    gap: 20px; /* Ajusta o espaçamento entre os itens */
+}
+
+.section-2-left {
+    flex: 1;
+    max-width: 100%; /* Permite que ocupe 100% da largura em telas pequenas */
+    text-align: center;
+}
+
+.section-2-text {
+    margin-bottom: 20px;
+}
+
+.section-2-text h2 {
+    font-size: 24px; /* Reduz o tamanho do texto em telas pequenas */
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.section-2-text p {
+    font-size: 16px; /* Reduz o tamanho do texto */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.gallery {
+    flex: 1;
+    max-width: 100%; /* Galeria ocupa toda a largura em telas pequenas */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    overflow: hidden;
+    background-color: #000;
+}
+
+.gallery img {
+    width: 100%; /* Imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover;
+    display: none;
+}
+
+.gallery img.active {
+    display: block;
+}
+
+.gallery .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Reduz o tamanho das setas */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 10;
+}
+
+.gallery .arrow.left {
+    left: 10px;
+}
+
+.gallery .arrow.right {
+    right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
     .section-2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 40px;
-        background-color: #000;
-        color: #fff;
-        gap: 30px;
+        flex-direction: column; /* Coloca os itens em uma única coluna */
+        align-items: center;
     }
-        
-    .red {
-        color: #CC0033; /* Cor vermelha */
-    }
-    
+
     .section-2-left {
-        flex: 1; 
-        max-width: 40%;
+        max-width: 100%; /* Texto ocupa 100% da largura */
     }
-    
-    .section-2-text {
-        margin-bottom: 20px;
-    }
-        
+
     .section-2-text h2 {
-        font-size: 36px;
-        margin-bottom: 30px;
-        text-align: center;
-        font-weight: normal;
-        letter-spacing: 5px;
+        font-size: 20px; /* Tamanho menor para o título */
     }
-    
+
     .section-2-text p {
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-        text-align: justify;
+        font-size: 14px; /* Tamanho menor para os parágrafos */
     }
-        
+
     .gallery {
-        flex: 1;
-        position: relative;
-        width: 50%;
-        max-width: 800px;
-        height: 500px; 
-        overflow: hidden; 
-        background-color: #000; 
+        max-width: 100%;
+        height: auto; /* Ajusta a altura da galeria dinamicamente */
     }
-    
+
     .gallery img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: none;
+        object-fit: contain; /* Garante que a imagem não será cortada */
     }
-        
-    .gallery img.active {
-        display: block;
-    }
-    
-    .gallery .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.5);
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        z-index: 10;
-    }
-        
-    .gallery .arrow.left {
-        left: 10px;
-    }
-    
-    .gallery .arrow.right {
-        right: 10px;
-    }
+}
 
         
     /* Responsividade */
