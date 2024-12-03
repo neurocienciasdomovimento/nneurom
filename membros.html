@@ -198,10 +198,8 @@
                         </a>
                     </div> 
                 </div>
-            </div>
-            
-        </section>
-  
+            </div>            
+        </section>  
     </main>
 
     <footer>
@@ -419,6 +417,34 @@
         height: 40px;
         text-decoration: none;
     }        
+
+/* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .members-section {
+                grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+                gap: 15px; /* Reduz o espaço entre os cards */
+                padding: 10px; /* Ajusta o padding */
+            }
+        
+            .member-card img {
+                width: 150px; /* Reduz o tamanho das imagens */
+                height: 150px; /* Mantém proporção circular */
+            }
+        
+            .member-info h3 {
+                font-size: 18px; /* Reduz o tamanho do nome */
+            }
+        
+            .member-info p {
+                font-size: 12px; /* Reduz o tamanho dos textos */
+            }
+        
+            .social-icons img {
+                width: 30px; /* Reduz os ícones sociais */
+                height: 30px;
+            }
+        }
+     
     footer {
         background-color: #f9f9f9;
         text-align: center;
