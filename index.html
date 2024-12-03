@@ -46,7 +46,7 @@
             <div class="section-2-left">
                 <div class="section-2-text">
                     <h2>
-                        Sobre o <span class="red">N</span>NEURO</span><span class="red">M</span>
+                        Sobre o <span class="white">N</span><span class="red">NEURO</span><span class="white">M</span>
                     </h2>
                     <p>O Núcleo de Neurociências do Movimento (NNeuroM) é um núcleo de pesquisa do Grupo de Estudo em Desenvolvimento e Aprendizagem Motora (GEDAM) da Escola de Educação Física, Fisioterapia e Terapia Ocupacional da UFMG.</p>
                     <p>Nossa investigação sobre o estudo do movimento voluntário é realizado em diferentes níveis de análises, desde os mais macroscópicos (níveis sociológico e comportamental) até os mais microscópicos (eletrofisiológico e molecular).</p>
@@ -69,6 +69,25 @@
                 <button class="arrow right" onclick="nextImage()">&#8594;</button>
             </div>
         </section>
+
+        <section class="section-3">
+            <h2>Linhas de Pesquisa:</h2>           
+            <div class="research-container">
+                <div class="research-item">
+                    <p>Associação entre fatores que otimizam a aprendizagem motora e aspectos neurobiológicos</p>
+                </div>
+                <div class="research-item">
+                    <p>Modulação da resposta central no controle motor</p>
+                </div>
+                <div class="research-item">
+                    <p>Papel de áreas cerebrais no controle e aprendizagem motora</p>
+                </div>
+                <div class="research-item">
+                    <p>Funções executivas, transtornos psiquiátricos e comportamento motor</p>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
@@ -285,6 +304,10 @@
     .red {
         color: #CC0033; /* Cor vermelha */
     }
+
+    .white {
+    color: #fff;
+    }
         
     .section-2-left {
         flex: 1; 
@@ -367,11 +390,14 @@
     .gallery {
         width: 100%; /* A galeria ocupa toda a largura disponível */
         max-width: none; /* Remove restrições de largura máxima */
-        height: auto; /* Ajusta a altura automaticamente */
+        height: 300px; /* Define uma altura fixa para a galeria */
+        overflow: hidden; /* Garante que o conteúdo não extrapole a área da galeria */    
     }
 
     .gallery img {
-        height: auto; /* Garante que as imagens mantenham a proporção */
+        width: 100%; /* Garante que a imagem ocupe a largura da galeria */
+        height: 100%; /* Ajusta a imagem para ocupar a altura fixa */
+        object-fit: cover; /* Preenche a área sem distorcer a imagem */
     }
 
     .section-2-text h2 {
@@ -383,6 +409,72 @@
     }
         
 }      
+
+    .section-3 {
+        text-align: center;
+        padding: 20px 20px;
+        background-color: #fff;
+    }
+
+    .section-3 h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+        color: #000;
+        font-weight: normal;
+        letter-spacing: 5px;
+    }
+
+    .research-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .research-item {
+        background-color: #000;
+        color: #fff;
+        border-radius: 15px;
+        width: 250px;
+        height: 100px;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .research-item p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .research-item::before,
+    .research-item::after {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .research-item::before {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+    }
+
+    .research-item::after {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+
 
     footer {
         background-color: #f9f9f9;
@@ -399,6 +491,5 @@
 
 </style>        
 
-</body>
-    
+</body>    
 </html>
