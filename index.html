@@ -41,57 +41,7 @@
             <h2>Núcleo de Neurociências do Movimento</h2>
             <img src="mao.png" alt="Logo">
         </section>
-        
-        <section class="section-2">
-            <div class="section-2-left">
-                <div class="section-2-text">
-                    <h2>
-                        Sobre o <span class="red">N</span>NEURO</span><span class="red">M</span>
-                    </h2>
-                    <p>O Núcleo de Neurociências do Movimento (NNeuroM) é um núcleo de pesquisa do Grupo de Estudo em Desenvolvimento e Aprendizagem Motora (GEDAM) da Escola de Educação Física, Fisioterapia e Terapia Ocupacional da UFMG.</p>
-                    <p>Nossa investigação sobre o estudo do movimento voluntário é realizado em diferentes níveis de análises, desde os mais macroscópicos (níveis sociológico e comportamental) até os mais microscópicos (eletrofisiológico e molecular).</p>
-                    <p>O NNeuroM não caminha sozinho! Trabalhamos em colaboração com outros laboratórios da UFMG e mantemos parcerias com instituições no Brasil e ao redor do mundo. Nosso núcleo é composto por especialistas de diversas áreas - Educação Física, Fisioterapia, Terapia Ocupacional e Música.</p>
-                </div>
-            </div>
-            <div class="gallery">
-                <button class="arrow left" onclick="prevImage()">&#8592;</button>
-                <img src="galeria7.jpg" alt="Imagem 1" class="active">
-                <img src="galeria1.jpg" alt="Imagem 2">
-                <img src="galeria11.jpg" alt="Imagem 3">
-                <img src="galeria12.jpg" alt="Imagem 4">
-                <img src="galeria13.jpeg" alt="Imagem 5">
-                <img src="galeria2.jpg" alt="Imagem 6">
-                <img src="galeria3.jpg" alt="Imagem 7">
-                <img src="galeria4.jpg" alt="Imagem 8">
-                <img src="galeria6.jpg" alt="Imagem 9">
-                <img src="galeria8.jpg" alt="Imagem 10">
-                <img src="galeria9.jpg" alt="Imagem 11">
-                <button class="arrow right" onclick="nextImage()">&#8594;</button>
-            </div>
-        </section> 
-        
     </main>
-    
-    <script>
-        let currentImageIndex = 0;
-        const images = document.querySelectorAll(".gallery img");
-
-        function showImage(index) {
-            images.forEach((img, i) => {
-                img.classList.toggle("active", i === index);
-            });
-        }
-
-        function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            showImage(currentImageIndex);
-        }
-
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            showImage(currentImageIndex);
-        }
-    </script>
 
     <footer>
         <p>&copy; 2024 NNEUROM - Desenvolvido por Isabelle Nery</p>
@@ -198,6 +148,40 @@
         color: red;
     }
 
+
+
+        
+/* Responsividade header */
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        nav ul {
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .search-container {
+            display: none;
+        }
+
+        nav {
+            order: 2;
+        }
+
+        .logo {
+            order: 1;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+
+        
     .section-1 {
         text-align: center;
         margin: 30px 5%;
@@ -226,141 +210,30 @@
     .section-1 img {
             max-width: 30%;
             height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-.section-2 {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens se reorganizem em linhas */
-    justify-content: center; /* Centraliza os itens em telas menores */
-    align-items: flex-start;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-    gap: 20px; /* Ajusta o espaçamento entre os itens */
-}
-
-.section-2-left {
-    flex: 1;
-    max-width: 100%; /* Permite que ocupe 100% da largura em telas pequenas */
-    text-align: center;
-}
-
-.section-2-text {
-    margin-bottom: 20px;
-}
-
-.section-2-text h2 {
-    font-size: 24px; /* Reduz o tamanho do texto em telas pequenas */
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 3px;
-}
-
-.section-2-text p {
-    font-size: 16px; /* Reduz o tamanho do texto */
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.gallery {
-    flex: 1;
-    max-width: 100%; /* Galeria ocupa toda a largura em telas pequenas */
-    height: auto; /* Permite que a altura se ajuste ao conteúdo */
-    overflow: hidden;
-    background-color: #000;
-}
-
-.gallery img {
-    width: 100%; /* Imagem ocupa 100% da largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover;
-    display: none;
-}
-
-.gallery img.active {
-    display: block;
-}
-
-.gallery .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px; /* Reduz o tamanho das setas */
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-    z-index: 10;
-}
-
-.gallery .arrow.left {
-    left: 10px;
-}
-
-.gallery .arrow.right {
-    right: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .section-2 {
-        flex-direction: column; /* Coloca os itens em uma única coluna */
-        align-items: center;
-    }
-
-    .section-2-left {
-        max-width: 100%; /* Texto ocupa 100% da largura */
-    }
-
-    .section-2-text h2 {
-        font-size: 20px; /* Tamanho menor para o título */
-    }
-
-    .section-2-text p {
-        font-size: 14px; /* Tamanho menor para os parágrafos */
-    }
-
-    .gallery {
-        max-width: 100%;
-        height: auto; /* Ajusta a altura da galeria dinamicamente */
-    }
-
-    .gallery img {
-        object-fit: contain; /* Garante que a imagem não será cortada */
-    }
-}
-
-        
-    /* Responsividade */
+/* Responsividade imagem */
     @media (max-width: 768px) {
-        header {
-            flex-direction: column;
-            align-items: stretch;
-        }
-
-        nav ul {
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .search-container {
-            display: none;
-        }
-
-        nav {
-            order: 2;
-        }
-
-        .logo {
-            order: 1;
-            text-align: center;
-            margin-bottom: 10px;
+        .section-1 img {
+            max-width: 80%; /* Reduz o tamanho máximo em telas menores */
         }
     }
 
+    footer {
+        background-color: #f9f9f9;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+        color: #666;
+        border-top: 2px solid #ddd;
+    }
+
+    footer p {
+        margin: 0;
+    }
 
 </style>        
 
