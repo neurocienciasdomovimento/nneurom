@@ -37,6 +37,49 @@
         <section class="section-1">
             <h1>Softwares</h1>            
         </section>
+        
+        <section class="section-2">
+            <div class="software-list">
+                <div class="software-item">
+                    <img src="acelerometro.png" alt="NNeuroMAccel">
+                    <div class="software-content">
+                        <h2>NNeuroMAccel</h2>
+                        <p>
+                            O NneuromAccel é um aplicativo desenvolvido para celular (sistema Android) utilizado para avaliar a aceleração nos três eixos (x, y e z). Você deve definir a frequência (número de pontos por segundo), a duração (em segundos) de cada tentativa e o número de tentativas. Por exemplo, você defini 100 no campo “Frequency”, 1 no campo “Time trial(s)” e 10 no campo “Trials”. Neste exemplo, será adquirido 100 pontos por segundo em cada uma das dez tentativas. Ao final de todas as tentativas aparecerá a tela final com o número de tentativas realizadas e um botão para enviar os dados de cada tentativa. Ao pressionar o botão abrirá uma caixa de diálogo para compartilhar os dados com as mídias instaladas no celular (ex., whatsapp ou e-mail). As tentativas serão enviadas uma a uma! Note, os dados enviados correspondem aos valores de x, y, z e o tempo, de cada “ponto” ao longo das tentativas.
+                        </p>
+                        <a href="https://github.com/apolinario-souza/NNeuromAccel" target="_blank"> 
+                            <button>Download</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="software-item">
+                    <img src="default.png" alt="NNeuroMReact">
+                    <div class="software-content">
+                        <h2>NNeuroMReact</h2>
+                        <p>
+                            O NneuromReact um aplicativo desenvolvido para celular (sistema Android) utilizado para avaliar a o tempo de reação em tarefas discretas. Você deve definir a duração máxima e a sensibilidade do sistema. A sensibilidade é um valor arbitrário, em percentual, definido para indicar o nível de tolerância de aceleração para indicar início de movimento. Em outras palavras, o valor indicado no campo “sensitivity (0 – 100%)” indicará o percentual de variação permitido para que considere início do movimento.
+                        </p>
+                        <a href="https://github.com/apolinario-souza/NNeuromAccel" target="_blank">
+                            <button>Download</button>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="software-item">
+                    <img src="default.png" alt="Serial Reaction Time Task">
+                    <div class="software-content">
+                        <h2>Serial Reaction Time Task</h2>
+                        <p>---</p>
+                        <a href="https://github.com/apolinario-souza/Serial_reaction_time_task" target="_blank">
+                            <button>Download</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
     </main>
 
     <footer>
@@ -187,19 +230,59 @@
         font-weight: normal;
         letter-spacing: 5px;
     }
-      
 
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-    .section-2 {
-        flex-direction: column; /* Empilha os elementos verticalmente */
-        align-items: center; /* Centraliza os itens */
+    .software-list {
+        display: flex;
+        flex-direction: column;
         gap: 20px;
+        padding: 40px;
     }
-  }
 
-       
+    .software-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    .software-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .software-content {
+        flex: 1;
+    }
+
+    .software-content h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+    }
+
+    .software-content p {
+        margin: 40 40 20px;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .software-content button {
+        background-color: #000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .software-content button:hover {
+        background-color: #444;
+    }
+               
 footer {
     background-color: #f9f9f9;
     text-align: center;
