@@ -380,12 +380,12 @@
         flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha, se necessário */
         justify-content: center; /* Centraliza os ícones horizontalmente */
         align-items: center; /* Centraliza os itens verticalmente */
-        gap: 20px; /* Espaçamento entre os itens */
+        gap: 30px; /* Espaçamento entre os itens */
     }
 
     .icons img {
-        width: 60px; /* Reduz o tamanho dos ícones */
-        height: 60px;
+        width: 70px; /* Reduz o tamanho dos ícones */
+        height: 70px;
         margin-bottom: 15px;
     }
     
@@ -416,22 +416,29 @@
 
     form {
         gap: 15px; /* Reduz o espaço entre os elementos do formulário */
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
         
     }
 
     form label {
         font-size: 12px; /* Texto menor para os labels */
-        justify-text: left;
-        align-itens: left;
+        text-align: left;
+        width: 95%;
     }
 
     form input, form textarea {
         font-size: 12px; /* Texto menor nos campos */
+        width: 95%;
+        padding: 8px;
+        text-align: left;
     }
 
     form button {
-        font-size: 16px; /* Botão com texto menor */
+        font-size: 14px; /* Botão com texto menor */
         padding: 10px; /* Padding ajustado */
+        align-self: center;
     } 
 }
         
