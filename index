@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - NNeuroM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <span class="red">N</span><span class="logo-neuro">NEURO</span><span class="red">M</span>
+            </a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar no site...">
+            <button>Search</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="membros.html">Membros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="publicacoes.html">Publicações</a></li>
+                <li><a href="softwares.html">Softwares</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>        
+        <section class="section-1">
+            <h1>
+                <span class="red">N</span><span class="black">NEURO</span><span class="red">M</span>
+            </h1>
+            <h2>Núcleo de Neurociências do Movimento</h2>
+        </section>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 NNEUROM - Desenvolvido por Isabelle Nery</p>
+    </footer>
+
+    <style>        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: #fff;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            flex: 0 0 auto;
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: normal;
+            color: #333;
+            letter-spacing: 3px;
+        }
+
+        .logo a .red {
+            color: #CC0033;
+        }
+
+        .search-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-container input {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            width: 300px;
+        }
+
+        .search-container button {
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #CC0033;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .search-container button:hover {
+            background-color: darkred;
+        }
+
+        nav {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul {
+            list-style: none;
+            font-size: 14px;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: normal;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: red;
+        }
+
+      .section-1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-1 h1 {
+            font-size: 70px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: normal;
+            letter-spacing: 10px;
+        }
+
+        .section-1 h1 .red {
+            color: #CC0033;
+        }
+
+        .section-1 h2 {
+            font-size: 30px;
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            color: #666;
+            border-top: 2px solid #ddd;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        
+    </style>
+
+</body>
+    
+</html>
