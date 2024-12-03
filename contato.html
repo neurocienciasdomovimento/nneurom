@@ -334,7 +334,6 @@
         margin-top: 5px;
     }
 
-    /* Mapa */
     .map-container {
         margin-top: 5px;
         text-align: center;
@@ -354,6 +353,68 @@
         color: #333;
     }
 
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .section-2 {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px;
+    }
+
+    .left, .right {
+        flex: none;
+        width: 100%; /* Faz com que os elementos ocupem toda a largura */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .icons {
+        flex-direction: column; /* Organiza os ícones em uma única coluna */
+        gap: 15px;
+    }
+
+    .icons img {
+        width: 60px; /* Reduz o tamanho dos ícones */
+        height: 60px;
+    }
+
+    .icons a p {
+        font-size: 12px; /* Reduz o tamanho do texto */
+    }
+
+    .map-container iframe {
+        max-width: 100%; /* O mapa ocupa toda a largura disponível */
+        height: 150px; /* Reduz a altura do mapa */
+    }
+
+    .address {
+        font-size: 12px; /* Texto menor para o endereço */
+    }
+
+    .right h2 {
+        font-size: 20px; /* Reduz o tamanho do título */
+        margin-bottom: 20px;
+    }
+
+    form {
+        gap: 15px; /* Reduz o espaço entre os elementos do formulário */
+    }
+
+    form label {
+        font-size: 12px; /* Texto menor para os labels */
+    }
+
+    form input, form textarea {
+        font-size: 12px; /* Texto menor nos campos */
+    }
+
+    form button {
+        font-size: 14px; /* Botão com texto menor */
+        padding: 8px; /* Padding ajustado */
+    }
+}
+        
 footer {
     background-color: #f9f9f9;
     text-align: center;
