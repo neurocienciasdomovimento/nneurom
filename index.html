@@ -87,6 +87,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-4">
+            <h2><span class="red">N</span>Neuro<span class="red">M</span> em números</h2>
+            <p>Criado em 2016, hoje o NNeuroM conta com:</p>
+            <div class="numbers-container">
+                <div class="number-item">
+                    <h3 class="number red">3</h3>
+                    <div class="divider"></div>
+                    <p>Pós-doutorados</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">7</h3>
+                    <div class="divider"></div>
+                    <p>Doutorados</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">7</h3>
+                    <div class="divider"></div>
+                    <p>Doutorandos</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">4</h3>
+                    <div class="divider"></div>
+                    <p>Mestres</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">2</h3>
+                    <div class="divider"></div>
+                    <p>Mestrandos</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">3</h3>
+                    <div class="divider"></div>
+                    <p>Iniciação Científica</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">7</h3>
+                    <div class="divider"></div>
+                    <p>Profissionais</p>
+                </div>
+                <div class="number-item">
+                    <h3 class="number red">3</h3>
+                    <div class="divider"></div>
+                    <p>Não-discentes</p>
+                </div>
+            </div>
+        </section>
         
     </main>
 
@@ -485,7 +532,59 @@
         font-size: 14px;
         }     
     }    
+
+    .section-4 {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #fff;
+        color: #000;
+    }
     
+    .section-4 h2 {
+        font-size: 36px;
+        font-weight: normal;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .section-4 p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .numbers-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        justify-content: center;
+    }
+    
+    .number-item {
+        text-align: center;
+    }
+    
+    .number {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .red {
+        color: #CC0033; /* Vermelho */
+    }
+    
+    .divider {
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+        margin: 10px auto;
+    }
+    
+    .number-item p {
+        font-size: 16px;
+        margin: 0;
+        color: #000;
+    }
 
     footer {
         background-color: #f9f9f9;
